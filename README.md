@@ -15,15 +15,15 @@ every
 single
 one.
 
-Section A : Requirements
+## Section A : Requirements
     Flask (in python)
     Javascript
     Html
     Python
 
 
-Section B : Contents
-    Routes:
+## Section B : Contents
+### Routes:
         /colorpage - allow thew user to name the color, vote for a creative color name, and view the page.
         / - welcome the user
         /login - log the user in
@@ -33,7 +33,7 @@ Section B : Contents
                 typed in or randomly generated values the static/name.js script.
         /progress - shows the user the current number of colors that have been named, includng the ones in static/colors.csv
         /register - lets the user create an account
-    static:
+### static:
         color_wheel.png - website header icon
         colors.csv - csv of all currently named colors before this program started
         name.js - random number generator for /name
@@ -43,7 +43,7 @@ Section B : Contents
     data.db - my database
     app.py - the one that does all the underlying work
 
-data.db:
+### data.db:
     My database has 4 tables:
         colors:
             -- Store the names, and respective RGB values of the colors and a bool if the color was loaded from colors.csv (officialnamed)
@@ -54,7 +54,7 @@ data.db:
         votes:
             -- Record what users have voted
 
-Miscellaneous:
+### Miscellaneous:
     login_required:
         Checks that the user is logged in to the website and redirects them back to login page if the aren't
     make_hex:
@@ -62,7 +62,7 @@ Miscellaneous:
     error:
         Renders an error template based on the error.html template.
 
-Acknowledgements:
+#### Acknowledgements:
     C$50 finance for navbar inspiration and login_required function,
     codebrainz at https://github.com/codebrainz/color-names for the intial color names,
     All the folks at https://stackoverflow.com for the help,
