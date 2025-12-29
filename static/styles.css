@@ -1,0 +1,35 @@
+nav .navbar-brand.maroon
+{
+    color: #800000;
+}
+body
+{
+    overload-y: scroll;
+}
+.link-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+.header
+{
+    width: 1000%;
+    height: 150px;
+    color: white;
+    top: 0;
+    left: 0;
+}
+.invisible
+{
+    display: none;
+}

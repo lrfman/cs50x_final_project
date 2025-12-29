@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>
+        Error {{ code }}
+    </title>
+{% endblock %}
+{% block main %}
+    <h1>{{ code }}</h1>
+    <h3>{{ message }}</h3>
+    <img src="/static/smiley.png">
+{% endblock %}

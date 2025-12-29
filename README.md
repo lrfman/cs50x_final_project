@@ -1,3 +1,4 @@
+
 # My cs50 project: Color50
 
 So I realised that not every color has a name.
@@ -61,8 +62,13 @@ one.
         Converts a set of red, green and blue values into hexadecimal.
     error:
         Renders an error template based on the error.html template.
+## Section C: Downloading & using the webapp
+### Run this in your terminal:
+    git clone https://gitub.com/lrfman/cs50x_final_project
+### Then run
+    flask run
 
-#### Acknowledgements:
+## Acknowledgements:
     C$50 finance for navbar inspiration and login_required function,
     codebrainz at https://github.com/codebrainz/color-names for the intial color names,
     All the folks at https://stackoverflow.com for the help,
