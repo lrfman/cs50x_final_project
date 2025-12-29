@@ -25,7 +25,7 @@ one.
 
 ## Section B : Contents
 ### Routes:
-        /colorpage - allow thew user to name the color, vote for a creative color name, and view the page.
+        /colorpage - allow the user to name the color, vote for a creative color name, and view the page.
         / - welcome the user
         /login - log the user in
         /logout - log the user out
