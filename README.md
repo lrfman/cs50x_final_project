@@ -1,4 +1,4 @@
-#My cs50 project: Color50
+# My cs50 project: Color50
 
 So I realised that not every color has a name.
 And I wondered.
