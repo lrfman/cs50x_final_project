@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>{{ hexadecimal }}</title>
+        <title>{{ hex }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <link href="/static/color_wheel.png" rel="icon">
@@ -14,13 +14,16 @@
         <main>
             <div class="header" style="background: {{ hex }};"></div>
             <div style="font-size: 50px">
-                {{ name_ }}<br>
-                {{ hex }}
+                {{ hex }}<br>
+                {{ name_ }}
             </div>
+            <hr>
             <div>
                 <sect style="float: right">
                     <h1>Vote for color name</h1>
-                    {% if names != [] %}
+                    {% if named == 1 %}
+                        This color is Officially named by folks before this act!
+                    {% elif names != [] %}
                         <form method="POST">
                             <input name="mode_vote" class="invisible">
                             <select name="decision">
@@ -29,9 +32,9 @@
                                         <option value="{{ name.name }}">{{ name.name }}</option>
                                     {% endfor %}
                             </select>
-                            <span>
-                                <button class="btn btn-primary">Vote</button>
-                            </span>
+
+                            <button class="btn btn-primary">Vote</button>
+
                         </form>
                     {% else %}
                         <h3>This color does not currently have a name.</h3>
@@ -41,8 +44,8 @@
                     {% if named == 0 %}
                         <h1>Name the color</h1>
                         <form method="POST">
-                            <input name="mode_name" class="invisible">
-                            <input class="form-control mx-auto w-auto" autofocus="on" autocomplete="off" placeholder="Color Name" name="name">
+                            <input name="mode_name" class="invisible"><br>
+                            <input class="form-control mx-auto w-auto" autofocus="on" autocomplete="off" placeholder="Color Name" name="name"><br>
                             <button class="btn btn-primary">Name</button>
                         </form>
                     {% else %}

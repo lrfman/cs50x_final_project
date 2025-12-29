@@ -1,3 +1,4 @@
+
 {% extends "layout.html" %}
 
 {% block head %}
@@ -8,5 +9,6 @@
 {% block main %}
     <h1>{{ code }}</h1>
     <h3>{{ message }}</h3>
-    <img src="/static/smiley.png">
+    <a href="javascript:history.back()" style = "font-size: large">Go Back</a>
 {% endblock %}
+

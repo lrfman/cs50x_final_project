@@ -40,6 +40,7 @@ one.
         name.js - random number generator for /name
         smiley.png - my happy lil companion
         styles.css - stylesheet
+### main:
     init.py - put the values in colors.csv into data.db
     data.db - my database
     app.py - the one that does all the underlying work

@@ -4,7 +4,9 @@ nav .navbar-brand.maroon
 }
 body
 {
+    padding: 0px 0px;
     overload-y: scroll;
+    background-color: #f5f5f5;
 }
 .link-button {
   background: none;
