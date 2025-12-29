@@ -1,6 +1,11 @@
 
 # My cs50 final project: Color50
 
+
+Video url: https://youtu.be/TWd2fKKDzUA
+
+
+
 ## Why I decided to make Color50
 I realised that not every color has a name.
 And I wondered.
@@ -92,8 +97,6 @@ And That's it I hope you enjoy my final project!!!!
     git clone https://gitub.com/lrfman/cs50x_final_project
 ### Then run
     flask run
-### Youtube
-    Video url:
 
 ## Acknowledgements:
     C$50 finance for navbar inspiration and login_required function,
