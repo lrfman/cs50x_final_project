@@ -44,38 +44,38 @@ And That's it I hope you enjoy my final project!!!!
 
 ## Section B : Contents
 ### Routes:
-/colorpage - allow thew user to name the color, vote for a creative color name, and view the page.
-/ - welcome the user
-/login - log the user in
-/loout - log the user out
-/mycolors - let the user view the colors they have made
-/name - brings the user to the /colorpage route with the respective red, green and blue values the user
-typed in or randomly generated values the static/name.js script.
-/progress - shows the user the current number of colors that have been named, includng the ones in static/colors.csv
-/register - lets the user create an account
+    /colorpage - allow thew user to name the color, vote for a creative color name, and view the page.
+    / - welcome the user
+    /login - log the user in
+    /loout - log the user out
+    /mycolors - let the user view the colors they have made
+    /name - brings the user to the /colorpage route with the respective red, green and blue values the user
+    typed in or randomly generated values the static/name.js script.
+    /progress - shows the user the current number of colors that have been named, includng the ones in static/colors.csv
+    /register - lets the user create an account
 ### static:
-color_wheel.png - website header icon
-colors.csv - csv of all currently named colors before this program started
-name.js - random number generator for /name
-smiley.png - my happy lil companion
-styles.css - stylesheet
+    color_wheel.png - website header icon
+    colors.csv - csv of all currently named colors before this program started
+    name.js - random number generator for /name
+        smiley.png - my happy lil companion
+    styles.css - stylesheet
 ### main:
-data.db - my database
-app.py - the one that does all the underlying work
+    data.db - my database
+    app.py - the one that does all the underlying work
 
 ## misc:
-init.py - initialize data.db with values in colors.csv
+    init.py - initialize data.db with values in colors.csv
 
 ## data.db:
-My database has 4 tables:
-    colors:
-         -- Store the names, and respective RGB values of the colors and a bool if the color was loaded from colors.csv (officialnamed)
-    color_candidates:
-        -- Store the names, the respective user that created it, the RGB of the color that they named and the number of votes it recieved.
-    users:
-         -- Store the username, password and id of users.
-    votes:
-        -- Record what users have voted
+    My database has 4 tables:
+        colors:
+             -- Store the names, and respective RGB values of the colors and a bool if the color was loaded from colors.csv (officialnamed)
+        color_candidates:
+            -- Store the names, the respective user that created it, the RGB of the color that they named and the number of votes it recieved.
+        users:
+             -- Store the username, password and id of users.
+        votes:
+            -- Record what users have voted
 
 ## Miscellaneous:
     login_required (app.py):
